@@ -1,6 +1,6 @@
-const { exec } = require('child_process');
-const path = require('path');
-const fs = require('fs'); // Node.jsのファイル操作モジュールを読み込み
+import { exec } from 'child_process';
+import path from 'path';
+import fs from 'fs'; // Node.jsのファイル操作モジュールを読み込み
 
 /**
  * 指定されたディレクトリ内で、2つの参照(ブランチ、コミット等)を比較し、
