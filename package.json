@@ -4,8 +4,11 @@
   "description": "node.jsで書いた便利Scriptを入れていくRepository",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "imageOptimize": "node imageOptimize.mjs"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sharp": "^0.34.2"
+  }
 }
