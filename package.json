@@ -4,7 +4,8 @@
   "description": "node.jsで書いた便利Scriptを入れていくRepository",
   "main": "index.js",
   "scripts": {
-    "imageOptimize": "node imageOptimize.mjs"
+    "imageOptimize": "node imageOptimize.mjs",
+    "getChangedFilesList": "node getChangedFilesList.mjs main develop out"
   },
   "author": "",
   "license": "ISC",
