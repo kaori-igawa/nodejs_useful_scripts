@@ -144,3 +144,4 @@ dist
 
 # node.js script output
 changedFilesList.json
+*.zip
