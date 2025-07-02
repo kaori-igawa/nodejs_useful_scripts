@@ -120,7 +120,7 @@ async function main() {
 
   // 2. 引数が足りない場合は使い方を表示して終了
   if (!source || !target) {
-    console.error('使用法: node getChangedFilesList.js <比較元> <比較先> [フィルタパス] [zipファイル名]');
+    console.error('使用法: node getChangedFilesList.mjs <比較元> <比較先> [フィルタパス] [zipファイル名]');
     process.exit(1);
   }
 
