@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "imageOptimize": "node imageOptimize.mjs",
-    "getChangedFilesList": "node getChangedFilesList.mjs 1229bbdc3d04bbad7f45b7d84e9d1ee8f0656b5e develop ''",
-    "getChangedFilesList:createZip": "node getChangedFilesList.mjs 1229bbdc3d04bbad7f45b7d84e9d1ee8f0656b5e develop '' diff.zip"
+    "getChangedFilesList": "node getChangedFilesList.mjs main develop ''",
+    "getChangedFilesList:createZip": "node getChangedFilesList.mjs main develop '' diff.zip"
   },
   "author": "",
   "license": "ISC",

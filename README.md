@@ -13,26 +13,47 @@ npm run imageOptimize
  
 ## 変更データの一覧取得 - getChangedFilesList 
  
+ ### 変更ファイルリストを出力する
 以下のコマンドでmainブランチとdevelopブランチで追加・変更・削除・リネームされたファイルのリストがJSON形式で出力されます。  
  
-### 実行コマンド 
+#### 実行コマンド 
 ```
 npm run getChangedFilesList
 ```
-### 出力データのpath 
+#### 出力データのpath 
 ```
 changedFilesList.json
 ```
+
+### 変更データのみを抽出したzipファイルを作成する
+以下のコマンドで変更データのみを抽出したzipファイルも作成できます。
+
+#### 実行コマンド 
+```
+npm run getChangedFilesList:createZip
+```
+#### 出力データのpath 
+```
+diff.zip
+```
+
  
 ### 比較元、比較先を指定する
 比較元、比較先などを指定したい場合は以下のようにしてコマンドを実行してください。   
-`出力zipファイル名`はなしでもOKです。 
+`出力zipファイル名`はない場合はzipファイルは出力されません。  
 
 ```
-node getChangedFilesList.mjs [比較元(ブランチ名、コミットハッシュなど)] [比較先(ブランチ名、コミットハッシュなど)] [フィルタパス] [出力zipファイル名]
+比較元 ⇛ 比較元のブランチ名、コミットハッシュなど
+比較先 ⇛ 比較先のブランチ名、コミットハッシュなど
+フィルタパス ⇛ 比較したいディレクトリのパス
+出力zipファイル名 ⇛ 出力するzipファイル名（ない場合はzip出力されない）
+```
+
+```
+node getChangedFilesList.mjs [比較元] [比較先] [フィルタパス] [出力zipファイル名]
 ```
  
 #### 例
 ```
-node getChangedFilesList.js develop issues/issue_#1 htdocs hogehoge.json
+node getChangedFilesList.mjs develop issues/issue_#1 htdocs hogehoge.zip
 ```
